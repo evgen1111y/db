@@ -59,4 +59,3 @@ class Program(Base):
     qualification: Mapped[str | None]
 
     person_programs: Mapped[list["PersonProgram"]] = relationship("PersonProgram", back_populates="program")
-    
